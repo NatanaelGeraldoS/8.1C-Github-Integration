@@ -1,0 +1,12 @@
+{
+    "name": "github_integration",
+    "version": "1.0.0",
+    "description": "Dummy node.js for Github Integration",
+    "scripts": {
+        "build": "echo Building project...",
+        "test": "echo Running tests... && exit 0"
+    },
+    "devDependencies": {
+        "eslint": "^8.0.0"
+    }
+}
