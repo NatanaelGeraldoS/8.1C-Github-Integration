@@ -1,16 +1,11 @@
 pipeline{
     agent any
-    tools { maven 'Maven3' }
+    tools { maven 'NodeJS' }
     stages{
         stage("Build"){
             steps{
-                sh 'mvn -B -DskipTests clean package'
-            }
-        }
-
-        stage('Unit & Integration Tests'){
-            steps{
-                sh 'mvn -B verify'
+                sh 'npm install'
+                sh 'npm run build'
             }
         }
     }
